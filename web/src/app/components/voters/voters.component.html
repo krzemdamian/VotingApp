@@ -2,7 +2,7 @@
     <ng-template pTemplate="header">
     <div class="header-container">
         <h2>Voters</h2>
-        <button pButton pRipple type="button" icon="pi pi-plus-circle" class="p-button-rounded"></button>
+        <button pButton pRipple type="button" icon="pi pi-plus-circle" class="p-button-rounded" (click)="generateVoter()"></button>
     </div>
     </ng-template>
     <p-table [value]="voters" responsiveLayout="scroll">

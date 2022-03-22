@@ -5,8 +5,8 @@
     </div>
     </ng-template>
     <div class="control-container">
-        <p-dropdown [options]="voters" [(ngModel)]="selectedVoter" placeholder="I am" optionLabel="I am"></p-dropdown>
-        <p-dropdown [options]="candidates" [(ngModel)]="selectedCandidate" placeholder="I vote for" optionLabel="I vote for"></p-dropdown>
-        <p-button label="Submit"></p-button>
+        <p-dropdown [options]="voters" [(ngModel)]="selectedVoter" placeholder="I am" optionLabel="name"></p-dropdown>
+        <p-dropdown [options]="candidates" [(ngModel)]="selectedCandidate" placeholder="I vote for" optionLabel="name"></p-dropdown>
+        <p-button label="Submit" (click)="vote()"></p-button>
     </div>
 </p-fieldset>
