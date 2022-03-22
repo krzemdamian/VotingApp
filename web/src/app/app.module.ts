@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { VotersComponent } from './components/voters/voters.component';
 import { CandidatesComponent } from './components/candidates/candidates.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VotingPanelComponent } from './components/voting-panel/voting-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VotersComponent,
-    CandidatesComponent
+    CandidatesComponent,
+    VotingPanelComponent
   ],
   imports: [
     BrowserModule,

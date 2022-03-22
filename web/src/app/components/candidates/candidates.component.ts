@@ -11,7 +11,7 @@ export class CandidatesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.candidates = [{ name: 'Candidate 1', Votes: 2 }];
+    this.candidates = [{ name: 'Candidate 1', votes: 2 }];
   }
 
 }

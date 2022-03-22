@@ -6,6 +6,7 @@ import { DividerModule } from 'primeng/divider';
 import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
 import { FieldsetModule } from 'primeng/fieldset';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -16,7 +17,8 @@ import { FieldsetModule } from 'primeng/fieldset';
     DividerModule,
     ButtonModule,
     PanelModule,
-    FieldsetModule
+    FieldsetModule,
+    FormsModule
   ],
   exports: [
     TableModule,
@@ -24,7 +26,8 @@ import { FieldsetModule } from 'primeng/fieldset';
     DividerModule,
     ButtonModule,
     PanelModule,
-    FieldsetModule
+    FieldsetModule,
+    FormsModule
   ]
 })
 export class SharedModule { }
