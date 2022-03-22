@@ -36,10 +36,12 @@ namespace Api.V1.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody] CandidateDto candidateDto)
+        public IActionResult Post([FromBody] CandidateDto candidateDto)
         {
             var entity = _candidateMapper.ToEntity(candidateDto);
             _repository.Add(entity);
+
+            return Ok();
         }
     }
 }

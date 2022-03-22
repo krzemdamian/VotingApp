@@ -22,8 +22,13 @@ namespace Infrastructure.Repositories
             return _voters;
         }
 
+        public Voter Get(int id) =>
+            _voters.FirstOrDefault(v => v.Id.Equals(id));
+
         public void Add(Voter entity)
         {
+            var nextId = _voters.Any() ? _voters.Max(c => c.Id) + 1 : 0;
+            entity.Id = nextId;
             _voters.Add(entity);
         }
 

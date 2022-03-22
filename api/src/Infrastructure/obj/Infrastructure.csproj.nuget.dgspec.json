@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\krzem\\source\\repos\\VotingApp\\api\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\krzem\\source\\repos\\VotingApp\\api\\src\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

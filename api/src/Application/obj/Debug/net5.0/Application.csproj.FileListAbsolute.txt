@@ -10,3 +10,8 @@ C:\Users\krzem\source\repos\VotingApp\api\src\Application\obj\Debug\net5.0\Appli
 C:\Users\krzem\source\repos\VotingApp\api\src\Application\obj\Debug\net5.0\Application.dll
 C:\Users\krzem\source\repos\VotingApp\api\src\Application\obj\Debug\net5.0\ref\Application.dll
 C:\Users\krzem\source\repos\VotingApp\api\src\Application\obj\Debug\net5.0\Application.pdb
+C:\Users\krzem\source\repos\VotingApp\api\src\Application\bin\Debug\net5.0\Domain.dll
+C:\Users\krzem\source\repos\VotingApp\api\src\Application\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\krzem\source\repos\VotingApp\api\src\Application\bin\Debug\net5.0\Domain.pdb
+C:\Users\krzem\source\repos\VotingApp\api\src\Application\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\krzem\source\repos\VotingApp\api\src\Application\obj\Debug\net5.0\Application.csproj.CopyComplete

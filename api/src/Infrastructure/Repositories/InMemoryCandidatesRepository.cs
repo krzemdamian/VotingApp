@@ -22,6 +22,9 @@ namespace Infrastructure.Repositories
             return _candidates;
         }
 
+        public Candidate Get(int id) =>
+            _candidates.FirstOrDefault(v => v.Id.Equals(id));
+
         public void Add(Candidate entity)
         {
             var nextId = _candidates.Any() ? _candidates.Max(c => c.Id) + 1 : 0;
