@@ -3,7 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Api.Mappers.Abstractions;
 using Api.V1.Models;
+using Application.Repositories.Abstractions;
+using Domain.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,22 +17,29 @@ namespace Api.V1.Controllers
     [ApiVersion("1.0")]
     public class CandidatesController : ControllerBase
     {
+        private readonly IRepository<Candidate> _repository;
+        private readonly ITwoWayMapper<Candidate, CandidateDto> _candidateMapper;
+
+        public CandidatesController(IRepository<Candidate> repository, ITwoWayMapper<Candidate, CandidateDto> candidateMapper)
+        {
+            _repository = repository;
+            _candidateMapper = candidateMapper;
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<CandidateDto>> Get()
         {
-            var mockData = new CandidateDto[]
-            {
-                new CandidateDto() {Id = 0, Name = "Candidate 1", Votes = 0},
-                new CandidateDto() {Id = 1, Name = "Candidate 2", Votes = 1},
-                new CandidateDto() {Id = 2, Name = "Candidate 3", Votes = 2},
-            };
+            var entities = _repository.GetAll();
+            var result = entities.Select(e => _candidateMapper.ToDto(e));
 
-            return Ok(mockData);
+            return Ok(result);
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] CandidateDto candidateDto)
         {
+            var entity = _candidateMapper.ToEntity(candidateDto);
+            _repository.Add(entity);
         }
     }
 }

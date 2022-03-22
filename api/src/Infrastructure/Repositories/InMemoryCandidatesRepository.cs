@@ -24,6 +24,8 @@ namespace Infrastructure.Repositories
 
         public void Add(Candidate entity)
         {
+            var nextId = _candidates.Any() ? _candidates.Max(c => c.Id) + 1 : 0;
+            entity.Id = nextId;
             _candidates.Add(entity);
         }
 

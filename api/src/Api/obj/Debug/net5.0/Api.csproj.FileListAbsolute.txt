@@ -57,3 +57,9 @@ C:\Users\krzem\source\repos\VotingApp\api\src\Api\obj\Debug\net5.0\Api.dll
 C:\Users\krzem\source\repos\VotingApp\api\src\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\krzem\source\repos\VotingApp\api\src\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\krzem\source\repos\VotingApp\api\src\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Application.dll
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Domain.dll
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Domain.pdb
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\krzem\source\repos\VotingApp\api\src\Api\bin\Debug\net5.0\Application.pdb
