@@ -1,0 +1,12 @@
+<p-fieldset>
+    <ng-template pTemplate="header">
+    <div class="header-container">
+        <h2>Vote!</h2>
+    </div>
+    </ng-template>
+    <div class="control-container">
+        <p-dropdown [options]="voters" [(ngModel)]="selectedVoter" placeholder="I am" optionLabel="I am"></p-dropdown>
+        <p-dropdown [options]="candidates" [(ngModel)]="selectedCandidate" placeholder="I vote for" optionLabel="I vote for"></p-dropdown>
+        <p-button label="Submit"></p-button>
+    </div>
+</p-fieldset>
