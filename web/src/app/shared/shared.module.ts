@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
 import { DropdownModule } from 'primeng/dropdown';
 import { DividerModule } from 'primeng/divider';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [],
@@ -10,12 +11,14 @@ import { DividerModule } from 'primeng/divider';
     CommonModule,
     TableModule,
     DropdownModule,
-    DividerModule
+    DividerModule,
+    ButtonModule
   ],
   exports: [
     TableModule,
     DropdownModule,
-    DividerModule
+    DividerModule,
+    ButtonModule
   ]
 })
 export class SharedModule { }

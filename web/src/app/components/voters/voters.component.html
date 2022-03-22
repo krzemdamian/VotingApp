@@ -1,0 +1,17 @@
+<h1>Voters</h1>
+<!-- <button pButton pRipple type="button" icon="pi pi-plus-circle" class="p-button-rounded p-button-outlined"></button> -->
+<button pButton pRipple type="button" icon="pi pi-plus-circle" class="p-button-rounded"></button>
+<p-table [value]="voters" responsiveLayout="scroll">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Has voted</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-voter>
+        <tr>
+            <td>{{voter.name}}</td>
+            <td>{{voter.hasVoted}}</td>
+        </tr>
+    </ng-template>
+</p-table>
