@@ -4,6 +4,8 @@ import { TableModule } from 'primeng/table';
 import { DropdownModule } from 'primeng/dropdown';
 import { DividerModule } from 'primeng/divider';
 import { ButtonModule } from 'primeng/button';
+import { PanelModule } from 'primeng/panel';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [],
@@ -12,13 +14,17 @@ import { ButtonModule } from 'primeng/button';
     TableModule,
     DropdownModule,
     DividerModule,
-    ButtonModule
+    ButtonModule,
+    PanelModule,
+    FieldsetModule
   ],
   exports: [
     TableModule,
     DropdownModule,
     DividerModule,
-    ButtonModule
+    ButtonModule,
+    PanelModule,
+    FieldsetModule
   ]
 })
 export class SharedModule { }
